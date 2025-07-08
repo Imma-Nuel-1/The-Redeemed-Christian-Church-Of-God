@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-1 px-6 md:px-20 overflow-hidden">
+    <footer className="bg-black text-white py-4 px-6 md:px-20 overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Church Info & Logo */}
         <div>
@@ -44,14 +44,14 @@ export default function Footer() {
               <FaFacebookF className="text-[#B40404] text-2xl hover:scale-110 transition-transform" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/rccgcoc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaInstagram className="text-[#B40404] text-2xl hover:scale-110 transition-transform" />
             </a>
             <a
-              href="https://youtube.com"
+              href="https://l.instagram.com/?u=https%3A%2F%2Fyoutube.com%2F%40rccgcoc%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAacsuCYtA8IHDZFK-F9NmN3WGosQ8jCos3iVw6iw9XjUwVTs9GwYv7Q5XeLdGA_aem_3FL0P1QjSRlJvtA69kW3dA&e=AT2jnnU3Zvm_7N395yQzA8b3u7XuoiR3XzHK2pxAG09_ptB5qUulEpoGL6e3HD6IYxwUxRA8fpKBIJSIjKVohKq7ppueHSjpcUkeqQ"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -123,16 +123,18 @@ export default function Footer() {
         </div>
 
         {/* Instagram Feed (Live) */}
-        <div className="md:col-span-1">
+        <div className="md:col-span-1 relative">
           <h3 className="font-bold text-3xl mb-4">Instagram Feed</h3>
-          <div className="mt-2">
-            <iframe
-              src="https://widgets.sociablekit.com/instagram-feed/iframe/25576026"
-              className="w-full md:w-[550px] h-[500px] border-none overflow-hidden"
-              allowTransparency={true}
-              scrolling="yes"
-              title="Instagram Feed"
-            ></iframe>
+          <div className="mt-6">
+            <div className="w-[650px] -ml-40">
+              <iframe
+                src="https://widgets.sociablekit.com/instagram-feed/iframe/25576026"
+                className="w-full h-[500px] border-none overflow-hidden"
+                allowTransparency={true}
+                scrolling="yes"
+                title="Instagram Feed"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
